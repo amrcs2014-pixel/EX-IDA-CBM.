@@ -7,8 +7,7 @@
 Official implementation of the paper:
 
 > **Explainable Iron Deficiency Anemia Detection from Peripheral Blood Smears via Concept Bottleneck Models and Attention-Guided Morphological Maps**
-> Amr H. Abdelhaliem, Mohammed Tawfik, Ahmed S. Shaban, Islam S. Fathi, Mohamed Heshmat
-> Submitted to *Neural Computing and Applications*, 2026.
+
 
 A four-stage, inherently-interpretable pipeline that classifies individual red blood cells (RBCs) from peripheral blood smears (PBS) as **normal** or **Iron-Deficiency-Anemia (IDA) positive** by routing every prediction through five clinically grounded morphological concepts.
 
