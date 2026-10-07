@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the software and the associated
+  paper.
+title: >-
+  EX-IDA-CBM: Explainable Iron Deficiency Anemia Detection from Peripheral
+  Blood Smears via Concept Bottleneck Models and Attention-Guided
+  Morphological Maps
+abstract: >-
+  Reference implementation of a four-stage, inherently-interpretable deep
+  learning pipeline for IDA detection from peripheral blood smears. Combines
+  Cellpose-based instance segmentation, EfficientNet-B0 same-domain
+  pretraining, a five-concept Concept Bottleneck Model, and multi-scale
+  explainability (Grad-CAM++, Integrated Gradients, population-level
+  severity grading).
+version: 1.0.0
+date-released: "2026-10-07"
+license: MIT
+authors:
+  - family-names: Abdelhaliem
+    given-names: Amr H.
+    affiliation: Irbid National University, Jordan
+    email: a.hasan@inu.edu.jo
+  - family-names: Tawfik
+    given-names: Mohammed
+    affiliation: Sana'a University, Yemen
+  - family-names: Shaban
+    given-names: Ahmed S.
+    affiliation: Irbid National University, Jordan
+  - family-names: Fathi
+    given-names: Islam S.
+    affiliation: Ajloun National University, Jordan
+  - family-names: Heshmat
+    given-names: Mohamed
+    affiliation: Sohag University, Egypt
+repository-code: "https://github.com/amrogomma-web/EX-IDA-CBM"
+keywords:
+  - iron-deficiency-anemia
+  - concept-bottleneck-model
+  - explainable-ai
+  - peripheral-blood-smear
+  - medical-imaging
+preferred-citation:
+  type: article
+  title: >-
+    Explainable Iron Deficiency Anemia Detection from Peripheral Blood
+    Smears via Concept Bottleneck Models and Attention-Guided Morphological
+    Maps
+  authors:
+    - family-names: Abdelhaliem
+      given-names: Amr H.
+    - family-names: Tawfik
+      given-names: Mohammed
+    - family-names: Shaban
+      given-names: Ahmed S.
+    - family-names: Fathi
+      given-names: Islam S.
+    - family-names: Heshmat
+      given-names: Mohamed
+  journal: Neural Computing and Applications
+  year: 2026

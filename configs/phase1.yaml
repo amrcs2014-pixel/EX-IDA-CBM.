@@ -1,0 +1,31 @@
+# Phase-1 configuration: Chula-RBC-12 morphology pretraining.
+# All values match the paper's reported settings (Section 3.8).
+# Reproduces Table 1.
+
+data:
+  chula_rbc_root: data/Chula-RBC-12
+  input_size: 224
+  seed: 42
+
+model:
+  backbone: efficientnet_b0
+  pretrained: true
+
+train:
+  phase1_epochs: 100
+  phase1_lr: 0.001
+  phase1_batch_size: 64
+  phase1_warmup_epochs: 5
+
+  optimizer: adamw
+  weight_decay: 0.0001
+  gradient_clip_norm: 1.0
+  focal_gamma: 2.0
+  label_smoothing: 0.1
+
+  seed: 42
+  num_workers: 4
+  device: cuda
+
+output_dir: results/logs
+experiment_name: phase1_pretrain

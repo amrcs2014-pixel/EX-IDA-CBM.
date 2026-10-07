@@ -1,0 +1,4 @@
+setting,fn_recovered,fp_recovered,accuracy
+No intervention (baseline),0 / 17 (0%),0 / 5 (0%),98.9%
+Correct 1 concept per cell,15 / 17 (88.2%),1 / 5 (20.0%),99.7%
+Correct up to 2 concepts,15 / 17 (88.2%),5 / 5 (100%),99.9%

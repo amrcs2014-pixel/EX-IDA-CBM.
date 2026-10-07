@@ -1,0 +1,35 @@
+name: ex-ida-cbm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.1.*
+  - torchvision=0.16.*
+  - pytorch-cuda=11.8
+  - numpy
+  - scipy
+  - scikit-learn
+  - scikit-image
+  - pandas
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - tqdm
+  - pillow
+  - opencv
+  - tifffile
+
+  - pip:
+    - timm>=0.9.12
+    - cellpose>=3.0.0
+    - captum>=0.7.0
+    - grad-cam>=1.5.0
+    - staintools>=2.1.2
+    - statsmodels>=0.14.0
+    - tensorboard>=2.15.0
+    - -e .

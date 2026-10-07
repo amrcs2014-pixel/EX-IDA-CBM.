@@ -1,0 +1,4 @@
+concepts,acc_pct,f1_pct,auc_roc,ece,interpretability
+"3 (Pallor, Size, Hb)",96.8,95.3,0.982,0.046,High (n=3)
+5 (Full set),98.9,97.8,0.993,0.043,High (n=5)
+"7 (+ Texture, Edge)",98.7,97.5,0.992,0.052,Moderate (n=7)

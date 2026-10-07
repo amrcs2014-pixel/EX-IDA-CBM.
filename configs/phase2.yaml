@@ -1,0 +1,53 @@
+# Phase-2 configuration: AneRBC-I IDA fine-tuning.
+# All values match the paper's reported settings (Section 3.8).
+# Reproduces Tables 2, 3, 5, 6, 7, 8.
+
+data:
+  aner_bc_root: data/AneRBC-I
+  split_manifest: data/splits/aner_bc_split_42.json
+  crop_size: 64
+  input_size: 224
+  train_frac: 0.70
+  val_frac: 0.15
+  test_frac: 0.15
+  seed: 42
+  stain_reference: data/stain_reference/reference_slide.png
+
+model:
+  backbone: efficientnet_b0
+  pretrained: true
+  concept_hidden: [512, 256]
+  num_concepts: 5
+  classifier_hidden: 32
+  num_classes: 2
+  dropout: [0.3, 0.2]
+
+train:
+  phase2_epochs: 60
+  phase2_lr: 0.0001
+  phase2_backbone_lr_mult: 0.1
+  phase2_batch_size: 64
+  phase2_early_stop_patience: 10
+  phase2_warmup_epochs: 5
+
+  optimizer: adamw
+  weight_decay: 0.0001
+  gradient_clip_norm: 1.0
+  focal_gamma: 2.0
+  label_smoothing: 0.1
+  mixup_alpha: 1.0
+  cutmix_alpha: 1.0
+  mixup_cutmix_prob: 0.5
+
+  seed: 42
+  num_workers: 4
+  device: cuda
+
+eval:
+  bootstrap_resamples: 1000
+  ece_bins: 15
+  severity_thresholds: [0.3, 0.5, 0.7]
+  mc_dropout_passes: 30
+
+output_dir: results/logs
+experiment_name: phase2_finetune

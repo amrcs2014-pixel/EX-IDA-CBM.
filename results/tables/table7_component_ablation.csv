@@ -1,0 +1,8 @@
+configuration,acc_pct,f1_pct,auc,ci_low,ci_high,p_raw,p_adj,cohens_d
+Full Pipeline (Ours),98.9,97.8,0.993,0.989,0.996,---,---,---
+w/o Same-Domain Pretrain,95.4,93.7,0.971,0.962,0.979,<0.001,<0.001,0.84
+w/o Macenko Stain Norm.,96.8,95.1,0.981,0.974,0.987,<0.001,<0.001,0.52
+w/o MixUp + CutMix,97.6,96.4,0.987,0.982,0.992,<0.001,0.004,0.26
+w/o Focal Loss (use CE),97.9,96.7,0.988,0.983,0.992,<0.001,0.006,0.22
+w/o Watershed Refinement,98.1,97.0,0.990,0.985,0.994,0.08,0.16,0.13
+Direct CNN (no CBM),98.5,97.3,0.992,0.988,0.995,0.62,0.62,0.02

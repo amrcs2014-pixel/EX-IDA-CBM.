@@ -1,0 +1,11 @@
+{
+  "accuracy":           {"mean": 0.989, "std": 0.002},
+  "precision_macro":    {"mean": 0.987, "std": 0.003},
+  "recall_macro":       {"mean": 0.986, "std": 0.003},
+  "f1_macro":           {"mean": 0.978, "std": 0.003},
+  "auc_roc":            {"mean": 0.993, "std": 0.001},
+  "auc_pr":             {"mean": 0.991, "std": 0.002},
+  "ece":                {"mean": 0.043, "std": 0.004},
+  "brier":              {"mean": 0.0097, "std": 0.0008},
+  "mce":                {"mean": 0.072, "std": 0.011}
+}

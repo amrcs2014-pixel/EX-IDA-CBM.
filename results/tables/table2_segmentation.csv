@@ -1,0 +1,9 @@
+metric,healthy,anemic,overall
+Cells/Image (mean),254,1005,630
+Cells/Image (SD),38,142,412
+Cell Area (px^2, mean),1123,336,730
+Cell Area (px^2, SD),187,98,428
+Artifact Rejection Rate (%),3.9,5.4,4.7
+Panoptic Quality (PQ),0.991,0.985,0.988
+Segmentation Quality (SQ),0.988,0.982,0.985
+Recognition Quality (RQ),0.980,0.975,0.978

@@ -1,0 +1,15 @@
+class,precision,recall,f1
+Normal,0.982,0.987,0.984
+Macrocyte,0.918,0.901,0.909
+Microcyte,0.926,0.911,0.918
+Spherocyte,0.971,0.965,0.968
+Target cell,0.904,0.889,0.896
+Stomatocyte,0.893,0.871,0.882
+Ovalocyte,0.911,0.897,0.904
+Teardrop,0.882,0.858,0.870
+Burr cell,0.876,0.849,0.862
+Schistocyte,0.864,0.831,0.847
+Hypochromia,0.899,0.872,0.885
+Uncategorized,0.842,0.815,0.828
+Macro avg.,0.896,0.879,0.888
+Overall accuracy,,,0.941

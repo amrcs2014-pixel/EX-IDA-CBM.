@@ -1,0 +1,13 @@
+hyperparameter,value,val_auc_roc
+Weight decay λ,1e-05,0.988
+Weight decay λ,1e-04 (reported),0.991
+Weight decay λ,1e-03,0.985
+Batch size,32,0.989
+Batch size,64 (reported),0.991
+Batch size,128,0.990
+Focal-loss γ,1.0,0.986
+Focal-loss γ,2.0 (reported),0.991
+Focal-loss γ,3.0,0.989
+Label smoothing ε,0.0,0.988
+Label smoothing ε,0.1 (reported),0.991
+Label smoothing ε,0.2,0.987
